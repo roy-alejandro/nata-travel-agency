@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NATA Travel Agency — boutique travel experiences in Cusco, Peru.">
+  <meta name="theme-color" content="#0b1c30">
+  <title>NATA Travel Agency | Boutique Travel Experiences in Peru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NATA Travel Agency home">
+      <img src="assets/logo/nata-logo.webp" alt="NATA Travel Agency logo">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home" data-i18n="navHome">Home</a>
+      <a class="nav-link" href="#tours" data-i18n="navTours">Tours</a>
+      <a class="nav-link" href="#services" data-i18n="navServices">Our Services</a>
+      <a class="nav-link" href="#about" data-i18n="navAbout">About Us</a>
+      <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="language-switch" aria-label="Choose language">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      <button class="lang-btn lang-zh" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">BOUTIQUE TRAVEL EXPERIENCES · CUSCO, PERU</p>
+        <h1 data-i18n="heroTitle">Discover the Andes.<br><em>Experience them differently.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Specialized journeys, thoughtfully designed for small groups and curious travelers.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#tours" data-i18n="heroButton">Explore our experiences <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#contact" data-i18n="contactButton">Contact us</a>
+        </div>
+      </div>
+      <div class="hero-caption"><span></span><span data-i18n="heroCaption">CUSCO · THE ANDEAN REGION</span></div>
+      <a class="scroll-cue" href="#tours" aria-label="Scroll to experiences">↓</a>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow eyebrow-dark" data-i18n="introEyebrow">TRAVEL WITH PURPOSE</p>
+      <h2 data-i18n="introTitle">A more personal way to discover <em>Cusco.</em></h2>
+      <p class="intro-copy" data-i18n="introCopy">We create meaningful travel experiences that connect people with the landscapes, heritage and living culture of the Andes.</p>
+    </section>
+
+    <section class="experiences section-wrap" id="tours">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark" data-i18n="toursEyebrow">OUR SIGNATURE EXPERIENCES</p>
+          <h2 data-i18n="toursTitle">Four journeys in <em>Cusco</em></h2>
+        </div>
+        <a class="text-link" href="#contact" data-i18n="discoverAll">Discover our experiences ↗</a>
+      </div>
+
+      <div class="tour-grid">
+        <article class="tour-card tour-sacred">
+          <div class="tour-card-shade"></div>
+          <span class="tour-number">01</span>
+          <div class="tour-card-content">
+            <p data-i18n="tourType">SIGNATURE JOURNEY</p>
+            <h3 data-i18n="tourSacred">Sacred Valley</h3>
+            <span data-i18n="tourExplore">Explore experience ↗</span>
+          </div>
+        </article>
+        <article class="tour-card tour-south">
+          <div class="tour-card-shade"></div>
+          <span class="tour-number">02</span>
+          <div class="tour-card-content">
+            <p data-i18n="tourType">SIGNATURE JOURNEY</p>
+            <h3 data-i18n="tourSouth">South Valley</h3>
+            <span data-i18n="tourExplore">Explore experience ↗</span>
+          </div>
+        </article>
+        <article class="tour-card tour-rainbow">
+          <div class="tour-card-shade"></div>
+          <span class="tour-number">03</span>
+          <div class="tour-card-content">
+            <p data-i18n="tourType">SIGNATURE JOURNEY</p>
+            <h3 data-i18n="tourRainbow">Rainbow Mountain</h3>
+            <span data-i18n="tourExplore">Explore experience ↗</span>
+          </div>
+        </article>
+        <article class="tour-card tour-culture">
+          <div class="tour-card-shade"></div>
+          <span class="tour-number">04</span>
+          <div class="tour-card-content">
+            <p data-i18n="tourType">SIGNATURE JOURNEY</p>
+            <h3 data-i18n="tourCulture">Immersive Culture</h3>
+            <span data-i18n="tourExplore">Explore experience ↗</span>
+          </div>
+        </article>
+      </div>
+      <p class="placeholder-note" data-i18n="imageNote">Image placeholders — destination photography will be added in the next checkpoint.</p>
+    </section>
+
+    <section class="service-strip" id="services">
+      <div class="service-item">
+        <span class="service-symbol">✳</span>
+        <div><h3 data-i18n="smallGroups">Small groups</h3><p data-i18n="smallGroupsCopy">Up to 8 travelers</p></div>
+      </div>
+      <div class="service-item">
+        <span class="service-symbol">◇</span>
+        <div><h3 data-i18n="tailorMade">Tailor-made travel</h3><p data-i18n="tailorMadeCopy">Journeys designed around you</p></div>
+      </div>
+      <div class="service-item">
+        <span class="service-symbol">⌁</span>
+        <div><h3 data-i18n="localExpertise">Local expertise</h3><p data-i18n="localExpertiseCopy">Rooted in Cusco</p></div>
+      </div>
+      <div class="service-item">
+        <span class="service-symbol">✧</span>
+        <div><h3 data-i18n="responsible">Responsible travel</h3><p data-i18n="responsibleCopy">Respect for people and place</p></div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-mark">N</div>
+      <div class="about-content">
+        <p class="eyebrow eyebrow-dark" data-i18n="aboutEyebrow">THE NATA APPROACH</p>
+        <h2 data-i18n="aboutTitle">Beyond the destination.<br><em>Closer to its essence.</em></h2>
+        <p data-i18n="aboutCopy">NATA brings together local knowledge, thoughtful planning and a genuine appreciation for Andean culture. Our approach is personal, flexible and attentive to every detail.</p>
+        <a class="text-link" href="#contact" data-i18n="aboutLink">Get to know us ↗</a>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact">
+      <p class="eyebrow" data-i18n="contactEyebrow">YOUR JOURNEY STARTS HERE</p>
+      <h2 data-i18n="contactTitle">Let's create something <em>remarkable.</em></h2>
+      <a class="button button-gold" href="mailto:hello@natatravelagency.com" data-i18n="contactButton">Contact us</a>
+      <p class="contact-placeholder" data-i18n="contactNote">Contact details and inquiry channels will be confirmed before launch.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/logo/nata-logo.webp" alt="NATA Travel Agency">
+    <p>© <span id="year"></span> NATA Travel Agency. <span data-i18n="footerRights">All rights reserved.</span></p>
+    <a href="#home" data-i18n="backTop">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
