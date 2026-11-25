@@ -14,7 +14,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="NATA Travel Agency home">
-      <img src="assets/logo/nata-logo.webp" alt="NATA Travel Agency logo">
+      <span class="wordmark"><strong>NATA</strong><small>TRAVEL AGENCY</small></span>
     </a>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
@@ -109,24 +109,49 @@
       <p class="placeholder-note" data-i18n="imageNote">Image placeholders — destination photography will be added in the next checkpoint.</p>
     </section>
 
-    <section class="service-strip" id="services">
-      <div class="service-item">
-        <span class="service-symbol">✳</span>
-        <div><h3 data-i18n="smallGroups">Small groups</h3><p data-i18n="smallGroupsCopy">Up to 8 travelers</p></div>
+    <section class="detail-section section-wrap" id="services">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark" data-i18n="servicesEyebrow">HOW WE TRAVEL</p><h2 data-i18n="servicesTitle">Our <em>services</em></h2></div>
+        <p class="section-aside" data-i18n="servicesIntro">Thoughtful travel solutions, shaped around each group and purpose.</p>
       </div>
-      <div class="service-item">
-        <span class="service-symbol">◇</span>
-        <div><h3 data-i18n="tailorMade">Tailor-made travel</h3><p data-i18n="tailorMadeCopy">Journeys designed around you</p></div>
-      </div>
-      <div class="service-item">
-        <span class="service-symbol">⌁</span>
-        <div><h3 data-i18n="localExpertise">Local expertise</h3><p data-i18n="localExpertiseCopy">Rooted in Cusco</p></div>
-      </div>
-      <div class="service-item">
-        <span class="service-symbol">✧</span>
-        <div><h3 data-i18n="responsible">Responsible travel</h3><p data-i18n="responsibleCopy">Respect for people and place</p></div>
+      <div class="detail-grid service-grid">
+        <button class="detail-card" data-detail="groups" type="button">
+          <span class="detail-image service-image-groups"></span><span class="detail-card-body"><small>01 / SERVICE</small><strong data-i18n="serviceGroups">Small groups</strong><span data-i18n="serviceGroupsSub">Up to 8 travelers</span><em data-i18n="viewDetails">Discover more ↗</em></span>
+        </button>
+        <button class="detail-card" data-detail="tailor" type="button">
+          <span class="detail-image service-image-tailor"></span><span class="detail-card-body"><small>02 / SERVICE</small><strong data-i18n="serviceTailor">Tailor-made</strong><span data-i18n="serviceTailorSub">Journeys designed around you</span><em data-i18n="viewDetails">Discover more ↗</em></span>
+        </button>
+        <button class="detail-card" data-detail="mice" type="button">
+          <span class="detail-image service-image-mice"></span><span class="detail-card-body"><small>03 / SERVICE</small><strong>MICE</strong><span data-i18n="serviceMiceSub">Meetings, incentives, conferences & events</span><em data-i18n="viewDetails">Discover more ↗</em></span>
+        </button>
       </div>
     </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark" data-i18n="aboutEyebrow">THE NATA APPROACH</p><h2 data-i18n="aboutTitle">Beyond the destination.<br><em>Closer to its essence.</em></h2></div>
+          <p class="section-aside" data-i18n="aboutIntro">Meet the people, values and purpose behind every NATA journey.</p>
+        </div>
+        <div class="detail-grid about-grid">
+          <button class="detail-card" data-detail="story" type="button"><span class="detail-image about-image-story"></span><span class="detail-card-body"><small>01 / NATA</small><strong data-i18n="ourStory">Our story</strong><span data-i18n="ourStorySub">The origins and vision of NATA</span><em data-i18n="viewDetails">Discover more ↗</em></span></button>
+          <button class="detail-card" data-detail="team" type="button"><span class="detail-image about-image-team"></span><span class="detail-card-body"><small>02 / NATA</small><strong data-i18n="ourTeam">Our team</strong><span data-i18n="ourTeamSub">The people who make it happen</span><em data-i18n="viewDetails">Discover more ↗</em></span></button>
+          <button class="detail-card" data-detail="sustainability" type="button"><span class="detail-image about-image-sustainability"></span><span class="detail-card-body"><small>03 / NATA</small><strong data-i18n="sustainability">Sustainability</strong><span data-i18n="sustainabilitySub">Our social and environmental commitment</span><em data-i18n="viewDetails">Discover more ↗</em></span></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="detail-modal" id="detailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <div class="detail-modal-backdrop" data-close-modal></div>
+      <div class="detail-modal-panel">
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal>×</button>
+        <p class="eyebrow eyebrow-dark" id="detailEyebrow">NATA</p>
+        <h2 id="detailTitle">Discover NATA</h2>
+        <p id="detailDescription"></p>
+        <div class="modal-gallery"><img id="detailImageOne" alt="Reference image 1"><img id="detailImageTwo" alt="Reference image 2"></div>
+        <p class="modal-note" data-i18n="referencePhotos">Reference photographs — final content will be added in a later checkpoint.</p>
+      </div>
+    </div>
 
     <section class="about section-wrap" id="about">
       <div class="about-mark">N</div>
@@ -147,7 +172,7 @@
   </main>
 
   <footer class="site-footer">
-    <img src="assets/logo/nata-logo.webp" alt="NATA Travel Agency">
+    <span class="wordmark footer-wordmark"><strong>NATA</strong><small>TRAVEL AGENCY</small></span>
     <p>© <span id="year"></span> NATA Travel Agency. <span data-i18n="footerRights">All rights reserved.</span></p>
     <a href="#home" data-i18n="backTop">Back to top ↑</a>
   </footer>

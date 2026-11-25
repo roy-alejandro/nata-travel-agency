@@ -28,3 +28,14 @@ Open `index.html` in a browser. For best results, use the Live Server extension 
 - Contact email is a placeholder and must be replaced with the agency's confirmed contact address.
 - The four language versions contain preliminary interface copy only. All final marketing, legal and tour content must be professionally reviewed and translated.
 - This is a static prototype. It does not yet include booking, payment, CRM or form submission functionality.
+
+
+## Checkpoint 02 updates
+- Simplified typographic NATA wordmark in the site header and footer.
+- Refined visual system for cards, spacing, typography and responsive layouts.
+- Added interactive service cards: Small Groups (up to 8), Tailor-made and MICE.
+- Added interactive About cards: Our Story, Our Team and Sustainability.
+- Each detail panel opens with preliminary copy and two reference images.
+- Interface language selector remains available in English, Spanish, French and Mandarin Chinese.
+
+The descriptions and imagery are preliminary placeholders for review. Replace with approved agency content and licensed/owned photography before commercial launch.
