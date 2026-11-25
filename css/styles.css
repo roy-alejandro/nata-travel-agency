@@ -198,3 +198,93 @@ body.modal-open { overflow:hidden; }
   .detail-modal-panel { padding:28px 20px 22px; }
   .footer-wordmark { align-items:center; }
 }
+
+
+/* CHECKPOINT 03 — Home content hierarchy and user-replaceable photography */
+.hero {
+  background-image:
+    linear-gradient(90deg, rgba(6,20,34,.91) 0%, rgba(6,20,34,.68) 42%, rgba(6,20,34,.12) 100%),
+    url("../assets/images/home/hero-cusco.jpg"),
+    url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2200&q=85"),
+    linear-gradient(125deg, #102b42, #5e6d68 55%, #b58b52);
+}
+.tour-sacred {
+  background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
+    url("../assets/images/experiences/valle-sagrado/cover.jpg"),
+    linear-gradient(135deg,#667a6a,#b6a27c 48%,#334a45);
+}
+.tour-south {
+  background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
+    url("../assets/images/experiences/valle-sur/cover.jpg"),
+    linear-gradient(135deg,#4b625b,#9b8a70 50%,#273b3c);
+}
+.tour-rainbow {
+  background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
+    url("../assets/images/experiences/montana-colores/cover.jpg"),
+    linear-gradient(135deg,#8d765e,#bb875f 45%,#526a69);
+}
+.tour-culture {
+  background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
+    url("../assets/images/experiences/cultura-inmersiva/cover.jpg"),
+    linear-gradient(135deg,#6d4e3b,#b18a5b 50%,#30433c);
+}
+.service-image-groups {
+  background-image: linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),
+    url("../assets/images/services/groups/cover.jpg"),
+    url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=900&q=80");
+}
+.service-image-tailor {
+  background-image: linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),
+    url("../assets/images/services/tailor-made/cover.jpg"),
+    url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80");
+}
+.service-image-mice {
+  background-image: linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),
+    url("../assets/images/services/mice/cover.jpg"),
+    url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80");
+}
+.about-image-story {
+  background-image: url("../assets/images/about/history/cover.jpg"),
+    url("https://images.unsplash.com/photo-1531065208531-29e7fecc9bb7?auto=format&fit=crop&w=900&q=80");
+}
+.about-image-team {
+  background-image: url("../assets/images/about/team/cover.jpg"),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80");
+}
+.about-image-sustainability {
+  background-image: url("../assets/images/about/sustainability/cover.jpg"),
+    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80");
+}
+.value-strip {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:22px;
+  padding:30px max(24px,calc((100% - 1180px)/2));
+  background:#eee8dc;
+  border-top:1px solid #e4dccd;
+  border-bottom:1px solid #e4dccd;
+}
+.value-item { display:flex; align-items:flex-start; gap:13px; min-width:0; }
+.value-symbol { color:#b18437; font:500 24px/1 var(--serif); }
+.value-item strong { display:block; color:var(--navy); font:600 10px/1.5 var(--sans); letter-spacing:.03em; }
+.value-item p { margin:5px 0 0; color:#77746d; font:400 9px/1.7 var(--sans); }
+.experiences { padding-top:76px; }
+.experiences .section-heading { margin-bottom:28px; }
+.tour-card { min-height:350px; }
+.tour-card::after { content:""; position:absolute; inset:0; border:1px solid rgba(237,200,117,.18); pointer-events:none; }
+.tour-card-content { position:relative; z-index:1; }
+.tour-card:hover { box-shadow:0 16px 34px rgba(9,24,39,.15); }
+.intro { padding-bottom:68px; }
+.intro-copy { font-size:14px; }
+@media(max-width:980px) {
+  .value-strip { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:22px; }
+  .tour-card { min-height:310px; }
+}
+@media(max-width:700px) {
+  .value-strip { grid-template-columns:1fr 1fr; padding:26px 24px; gap:20px 14px; }
+  .value-symbol { font-size:20px; }
+  .value-item strong { font-size:9px; }
+  .value-item p { font-size:8px; }
+  .experiences { padding-top:55px; }
+  .tour-card { min-height:285px; }
+}

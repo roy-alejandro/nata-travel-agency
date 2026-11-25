@@ -39,3 +39,13 @@ Open `index.html` in a browser. For best results, use the Live Server extension 
 - Interface language selector remains available in English, Spanish, French and Mandarin Chinese.
 
 The descriptions and imagery are preliminary placeholders for review. Replace with approved agency content and licensed/owned photography before commercial launch.
+
+
+## Checkpoint 03 — Home and photo library
+- Refined the Home introduction and signature-experience presentation.
+- Added a four-point value strip highlighting small groups, local perspective, thoughtful details and multilingual service.
+- Removed the duplicate About section anchor from the previous version.
+- Prepared a structured photo library under `assets/images/`.
+- Added exact image filenames and practical upload instructions in `assets/images/GUIA-FOTOGRAFIAS.md`.
+- Local NATA photographs take priority when uploaded; current remote reference images remain as temporary fallbacks.
+- Detailed tour pages, final copy, contact channels and commercial content remain future work.
