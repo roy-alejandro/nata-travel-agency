@@ -1,3 +1,1 @@
-NATA PHOTO FOLDER
-Add approved agency-owned or properly licensed photographs here.
-See assets/images/GUIA-FOTOGRAFIAS.md for recommended filenames and dimensions.
+Add your own JPG photographs here using these exact names: cover.jpg, gallery-1.jpg, gallery-2.jpg, gallery-3.jpg. Temporary reference images appear when files are not yet available. Recommended: landscape JPG, 1600px wide or more.
