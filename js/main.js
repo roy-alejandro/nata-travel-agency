@@ -154,6 +154,13 @@ const detailTitle = document.getElementById('detailTitle');
 const detailDescription = document.getElementById('detailDescription');
 const detailImageOne = document.getElementById('detailImageOne');
 const detailImageTwo = document.getElementById('detailImageTwo');
+const teamProfileGrid = document.getElementById('teamProfileGrid');
+const teamMembers = [
+  {name:'Roy Alejandro Cuentas Quiñones', photo:'team-photo-roy'},
+  {name:'Thayly Guevara Zapa', photo:'team-photo-thayly'},
+  {name:'Nycol Medaly Sutta García', photo:'team-photo-nycol'},
+  {name:'Victor Enrique Angelo Varillas Reyes', photo:'team-photo-victor'}
+];
 let currentLanguage = 'en';
 const originalSetLanguage = setLanguage;
 setLanguage = function(language) { currentLanguage = language; originalSetLanguage(language); };
@@ -163,8 +170,17 @@ function openDetail(key) {
   const content = entry[currentLanguage] || entry.en;
   detailTitle.textContent = content[0];
   detailDescription.textContent = content[1];
-  detailImageOne.src = content[2][0];
-  detailImageTwo.src = content[2][1];
+  const isTeam = key === 'team';
+  detailImageOne.parentElement.hidden = isTeam;
+  teamProfileGrid.hidden = !isTeam;
+  if (isTeam) {
+    const roleLabel = {en:'Position and role to be defined',es:'Cargo y funciones por definir',fr:'Fonction et responsabilités à définir',zh:'职位与职责待定'}[currentLanguage] || 'Position and role to be defined';
+    const photoLabel = {en:'Professional photo',es:'Foto profesional',fr:'Photo professionnelle',zh:'职业照片'}[currentLanguage] || 'Professional photo';
+    teamProfileGrid.innerHTML = teamMembers.map((member) => `<article class="team-profile"><div class="team-profile-photo ${member.photo}"><span>${photoLabel}</span></div><div class="team-profile-info"><strong>${member.name}</strong><small>${roleLabel}</small></div></article>`).join('');
+  } else {
+    detailImageOne.src = content[2][0];
+    detailImageTwo.src = content[2][1];
+  }
   detailModal.classList.add('open');
   detailModal.setAttribute('aria-hidden','false');
   document.body.classList.add('modal-open');

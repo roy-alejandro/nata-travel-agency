@@ -42,3 +42,12 @@ Esta carpeta está preparada para que el equipo incorpore fotografías propias s
 - No incluyas imágenes de pasajeros identificables sin autorización.
 
 Las fotografías de referencia actuales seguirán funcionando como respaldo visual mientras no se agreguen las fotografías locales. Cuando exista una fotografía local con el nombre exacto, tendrá prioridad visual.
+
+## Fotografías individuales del equipo
+Añade los retratos profesionales en `about/team/` con estos nombres exactos:
+- `roy-alejandro-cuentas-quinones.jpg`
+- `thayly-guevara-zapa.jpg`
+- `nycol-medaly-sutta-garcia.jpg`
+- `victor-enrique-angelo-varillas-reyes.jpg`
+
+Formato recomendado: retrato vertical 4:5, JPG optimizado. Los cargos y descripciones se completarán cuando NATA confirme las responsabilidades de cada integrante.

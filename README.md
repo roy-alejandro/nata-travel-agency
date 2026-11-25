@@ -49,3 +49,15 @@ The descriptions and imagery are preliminary placeholders for review. Replace wi
 - Added exact image filenames and practical upload instructions in `assets/images/GUIA-FOTOGRAFIAS.md`.
 - Local NATA photographs take priority when uploaded; current remote reference images remain as temporary fallbacks.
 - Detailed tour pages, final copy, contact channels and commercial content remain future work.
+
+
+## CHECKPOINT 03 — ajustes solicitados
+- Se conserva la fotografía panorámica de Machu Picchu del diseño aprobado en Checkpoint 02, con las capas de fondo configuradas para cubrir el hero y mantener un encuadre centrado.
+- La subsección Our Team ahora presenta cuatro perfiles individuales con los nombres proporcionados por el equipo fundador.
+- Se prepararon rutas de fotografía profesional para cada integrante en `assets/images/about/team/`.
+- Los cargos y las descripciones de funciones permanecen pendientes de confirmación; no se han inventado.
+
+
+## Corrección de visibilidad — revisión 03.1
+
+Se corrigió la regla de visibilidad de los componentes del modal: la galería de dos imágenes se oculta al abrir “Nuestro Equipo”, y la cuadrícula de perfiles se oculta en todas las demás subsecciones. Los cuatro perfiles aparecen exclusivamente en About Us → Nuestro Equipo.

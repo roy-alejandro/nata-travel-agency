@@ -173,6 +173,8 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .detail-modal-panel>p:not(.eyebrow):not(.modal-note) { color:#696d6c; font:400 13px/1.9 var(--sans); }
 .modal-gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:24px; }
 .modal-gallery img { width:100%; aspect-ratio:1.5/1; object-fit:cover; background:#e6dfd2; }
+/* Respect the HTML hidden state even when component classes define display:grid. */
+.detail-modal-panel [hidden] { display:none !important; }
 .modal-note { margin:12px 0 0; color:#999186; font:400 9px/1.6 var(--sans); }
 body.modal-open { overflow:hidden; }
 .footer-wordmark { width:120px; align-items:flex-start; }
@@ -205,8 +207,10 @@ body.modal-open { overflow:hidden; }
   background-image:
     linear-gradient(90deg, rgba(6,20,34,.91) 0%, rgba(6,20,34,.68) 42%, rgba(6,20,34,.12) 100%),
     url("../assets/images/home/hero-cusco.jpg"),
-    url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2200&q=85"),
-    linear-gradient(125deg, #102b42, #5e6d68 55%, #b58b52);
+    url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2200&q=85");
+  background-position: center, center 48%, center 48%;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
 }
 .tour-sacred {
   background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
@@ -288,3 +292,19 @@ body.modal-open { overflow:hidden; }
   .experiences { padding-top:55px; }
   .tour-card { min-height:285px; }
 }
+
+
+/* CHECKPOINT 03 revision — founding team profiles */
+.team-profile-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:22px; }
+.team-profile { overflow:hidden; background:#f2eee6; border:1px solid #e2d9ca; }
+.team-profile-photo { aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; color:#8f826e; background-position:center 35%; background-size:cover; background-color:#e7dfd1; font:500 10px var(--sans); letter-spacing:.12em; text-transform:uppercase; }
+.team-profile-photo span { padding:8px 12px; background:rgba(250,248,243,.82); }
+.team-profile-info { padding:14px 15px 16px; }
+.team-profile-info strong { display:block; color:var(--navy); font:500 17px/1.25 var(--serif); }
+.team-profile-info small { display:block; margin-top:7px; color:#8b795d; font:600 9px/1.5 var(--sans); letter-spacing:.09em; text-transform:uppercase; }
+.team-profile-info p { margin:8px 0 0; color:#77746d; font:400 11px/1.65 var(--sans); }
+.team-photo-roy { background-image:url("../assets/images/about/team/roy-alejandro-cuentas-quinones.jpg"); }
+.team-photo-thayly { background-image:url("../assets/images/about/team/thayly-guevara-zapa.jpg"); }
+.team-photo-nycol { background-image:url("../assets/images/about/team/nycol-medaly-sutta-garcia.jpg"); }
+.team-photo-victor { background-image:url("../assets/images/about/team/victor-enrique-angelo-varillas-reyes.jpg"); }
+@media(max-width:560px) { .team-profile-grid { grid-template-columns:1fr 1fr; gap:9px; } .team-profile-info { padding:10px; } .team-profile-info strong { font-size:14px; } .team-profile-info p { font-size:10px; } }
