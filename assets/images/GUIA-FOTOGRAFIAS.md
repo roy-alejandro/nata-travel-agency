@@ -70,3 +70,19 @@ En cada carpeta `experiences/valle-sur/`, `experiences/montana-colores/` y `expe
 
 ### Importante
 Las fotografías de referencia externas sirven únicamente para el boceto y pueden cambiar o dejar de estar disponibles. Antes de publicar comercialmente, reemplázalas por fotografías propias o imágenes con licencia comercial verificada.
+
+
+## Carpetas nuevas para esta actualización
+
+### Nosotros
+- `about/history/history-1.jpg`: portada de Nuestra Historia (Cusco y patrimonio).
+- `about/history/history-2.jpg`: detalle (desarrollo y crecimiento turístico de Cusco).
+- `about/sustainability/community-1.jpg`: portada de Sostenibilidad (comunidades locales).
+- `about/sustainability/social-activity-2.jpg`: detalle (actividad social/comunitaria).
+
+### Servicios
+- `services/groups/groups-1.jpg` y `groups-2.jpg`: Small Groups.
+- `services/tailor-made/tailor-made-1.jpg` y `tailor-made-2.jpg`: Tailor Made.
+- `services/mice/mice-1.jpg` y `mice-2.jpg`: MICE.
+
+Las tarjetas utilizan la primera imagen de cada carpeta. Al abrir la tarjeta desplegable, se muestran las dos imágenes correspondientes. Reemplaza los archivos de ejemplo (si los hubiera) conservando exactamente estos nombres. En esta versión se dejan carpetas preparadas para que incorpores tus fotografías.

@@ -87,7 +87,10 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .about-content p:not(.eyebrow) { color: #6d706e; font: 400 13px/2 var(--sans); margin-bottom: 25px; }
 .contact-band { text-align: center; background: var(--navy); color: white; padding: 82px 24px; }
 .contact-band h2 { color: white; margin-bottom: 28px; }
-.contact-placeholder { margin: 20px 0 0; color: rgba(255,255,255,.5); font-size: 9px; }
+.contact-intro { max-width: 560px; margin: -8px auto 28px; color: rgba(255,255,255,.76); font-size: 14px; line-height: 1.8; }
+.contact-number { margin: 18px 0 0; color: rgba(255,255,255,.7); font-size: 12px; letter-spacing: .04em; }
+.contact-number a { color: var(--gold-light); text-decoration: none; }
+.contact-number a:hover { text-decoration: underline; }
 .site-footer { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px clamp(24px, 6vw, 90px); background: #071626; color: rgba(255,255,255,.68); }
 .site-footer img { width: 105px; height: 54px; object-fit: contain; }
 .site-footer p, .site-footer a { font-size: 9px; letter-spacing: .04em; }
@@ -150,12 +153,12 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .detail-card:hover,.detail-card:focus-visible { transform:translateY(-5px); box-shadow:0 16px 36px rgba(20,31,40,.10); border-color:#c8aa73; outline:none; }
 .detail-image { display:block; width:100%; aspect-ratio:1.55/1; background-color:#d5d0c4; background-size:cover; background-position:center; transition:transform .5s ease; }
 .detail-card:hover .detail-image { background-size:cover; }
-.service-image-groups { background-image:linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),url('https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=900&q=80'); }
-.service-image-tailor { background-image:linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80'); }
-.service-image-mice { background-image:linear-gradient(0deg,rgba(8,23,36,.12),rgba(8,23,36,.02)),url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80'); }
-.about-image-story { background-image:url('https://images.unsplash.com/photo-1531065208531-29e7fecc9bb7?auto=format&fit=crop&w=900&q=80'); }
-.about-image-team { background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80'); }
-.about-image-sustainability { background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80'); }
+.service-image-groups { background-image:url('../assets/images/services/groups/groups-1.jpg'); }
+.service-image-tailor { background-image:url('../assets/images/services/tailor-made/tailor-made-1.jpg'); }
+.service-image-mice { background-image:url('../assets/images/services/mice/mice-1.jpg'); }
+.about-image-story { background-image: url("../assets/images/about/history/history-1.jpg"); }
+.about-image-team { background-image:url('../assets/images/about/team/cover.jpg'); }
+.about-image-sustainability { background-image: url("../assets/images/about/sustainability/community-1.jpg"); }
 .detail-card-body { display:flex; flex-direction:column; align-items:flex-start; padding:22px 22px 24px; gap:8px; min-height:166px; }
 .detail-card-body small { color:#a77b2f; font:600 8px var(--sans); letter-spacing:.18em; }
 .detail-card-body strong { color:var(--navy); font:500 29px/1.05 var(--serif); }
@@ -251,18 +254,12 @@ body.modal-open { overflow:hidden; }
     url("../assets/images/services/mice/cover.jpg"),
     url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80");
 }
-.about-image-story {
-  background-image: url("../assets/images/about/history/cover.jpg"),
-    url("https://images.unsplash.com/photo-1531065208531-29e7fecc9bb7?auto=format&fit=crop&w=900&q=80");
-}
+.about-image-story { background-image: url("../assets/images/about/history/history-1.jpg"); }
 .about-image-team {
   background-image: url("../assets/images/about/team/cover.jpg"),
     url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80");
 }
-.about-image-sustainability {
-  background-image: url("../assets/images/about/sustainability/cover.jpg"),
-    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80");
-}
+.about-image-sustainability { background-image: url("../assets/images/about/sustainability/community-1.jpg"); }
 .value-strip {
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
@@ -366,3 +363,48 @@ body.page-valle-sur .detail-hero{background-image:linear-gradient(90deg,rgba(6,2
 body.page-montana-colores .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/montana-colores/cover.jpg"),url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=85");background-size:cover;background-position:center 48%;}
 body.page-valle-sagrado .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/valle-sagrado/cover.jpg"),url("https://cdn.kimkim.com/files/a/images/6d35b1e56f13a439e8716dacaade6343dacd6a5f/medium-c2444ed664cc8a593b6fda17c8dbc2c8.jpg");background-size:cover;background-position:center 48%;}
 body.page-cultura-inmersiva .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/cultura-inmersiva/cover.jpg"),url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=2200&q=85");background-size:cover;background-position:center 48%;}
+
+
+/* CP07 FIX — complementary photo galleries for the three main experiences */
+.experience-gallery { margin:58px 0 64px; }
+.experience-gallery h2 { font:500 38px 'Cormorant Garamond',serif; color:#10243a; margin:0 0 20px; }
+.experience-gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.experience-gallery-grid img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:2px; }
+@media(max-width:700px) { .experience-gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; } }
+
+
+/* CP07 UPDATE 02 — immersive, full-width experience photo gallery */
+/* Override the legacy grid rule that placed the heading and gallery side by side. */
+.experience-gallery {
+  display: block !important;
+  width: 100%;
+  margin: 76px 0 82px;
+}
+.experience-gallery h2 {
+  margin: 0 0 26px;
+  font: 500 clamp(34px, 4vw, 46px)/1.08 'Cormorant Garamond', serif;
+  color: #10243a;
+}
+.experience-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+.experience-gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #e9e1d4;
+}
+@media (max-width: 900px) {
+  .experience-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+}
+@media (max-width: 560px) {
+  .experience-gallery { margin: 52px 0 60px; }
+  .experience-gallery-grid { grid-template-columns: 1fr; gap: 14px; }
+  .experience-gallery-grid img { aspect-ratio: 16 / 10; }
+}
