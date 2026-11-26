@@ -1,1 +1,2 @@
-Add your own JPG photographs here using these exact names: cover.jpg, gallery-1.jpg, gallery-2.jpg, gallery-3.jpg. Temporary reference images appear when files are not yet available. Recommended: landscape JPG, 1600px wide or more.
+CULTURA INMERSIVA — FOTOGRAFÍAS
+La página muestra una fotografía referencial dentro de cada una de las seis tarjetas. Para sustituirlas por fotografías propias, edita el atributo src de cada elemento img.activity-image en experiences/cultura-inmersiva.html. Mantén imágenes horizontales, preferiblemente 16:9. La galería independiente “06 / NATA” fue retirada.

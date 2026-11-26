@@ -20,3 +20,11 @@ Each experience has its own folder in assets/images/experiences/. Add:
 If a local image is not present, the page displays a temporary reference photograph.
 
 Upload the complete NATA-TRAVEL-AGENCY folder contents to the root of the existing GitHub repository and commit the changes. GitHub Pages will redeploy automatically.
+
+
+UPDATE 01 — Public pricing panels have been added to the three tour experiences. Culture Inmersiva is presented as six separate complementary activities, each with a short description, inclusions placeholder and base-price placeholder. Prices and operational inclusions remain pending NATA confirmation.
+
+UPDATE 02 — CULTURA INMERSIVA
+- Removed the separate “06 / NATA” image gallery section.
+- Added one reference image to each of the six complementary activity cards.
+- Each card retains its description, inclusions placeholder, and base-price placeholder.
