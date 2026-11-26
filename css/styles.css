@@ -215,21 +215,25 @@ body.modal-open { overflow:hidden; }
 .tour-sacred {
   background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
     url("../assets/images/experiences/valle-sagrado/cover.jpg"),
+    url("https://cdn.kimkim.com/files/a/images/6d35b1e56f13a439e8716dacaade6343dacd6a5f/medium-c2444ed664cc8a593b6fda17c8dbc2c8.jpg"),
     linear-gradient(135deg,#667a6a,#b6a27c 48%,#334a45);
 }
 .tour-south {
   background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
     url("../assets/images/experiences/valle-sur/cover.jpg"),
+    url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1400&q=85"),
     linear-gradient(135deg,#4b625b,#9b8a70 50%,#273b3c);
 }
 .tour-rainbow {
   background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
     url("../assets/images/experiences/montana-colores/cover.jpg"),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85"),
     linear-gradient(135deg,#8d765e,#bb875f 45%,#526a69);
 }
 .tour-culture {
   background-image: linear-gradient(0deg, rgba(7,19,26,.88), transparent 75%),
     url("../assets/images/experiences/cultura-inmersiva/cover.jpg"),
+    url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85"),
     linear-gradient(135deg,#6d4e3b,#b18a5b 50%,#30433c);
 }
 .service-image-groups {
@@ -356,3 +360,9 @@ body.modal-open { overflow:hidden; }
 .activity-price{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid var(--line)}
 .activity-price strong{color:#9a702c;font:600 16px var(--serif)}
 @media(max-width:700px){.public-price-panel{display:block;padding:22px}.price-value{margin-top:18px}.culture-activity-grid{grid-template-columns:1fr}.culture-activity-card{min-height:270px}}
+
+/* CP07 — temporary visual references; local NATA files take priority */
+body.page-valle-sur .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.28)),url("../assets/images/experiences/valle-sur/cover.jpg"),url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2200&q=85");background-size:cover;background-position:center 48%;}
+body.page-montana-colores .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/montana-colores/cover.jpg"),url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=85");background-size:cover;background-position:center 48%;}
+body.page-valle-sagrado .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/valle-sagrado/cover.jpg"),url("https://cdn.kimkim.com/files/a/images/6d35b1e56f13a439e8716dacaade6343dacd6a5f/medium-c2444ed664cc8a593b6fda17c8dbc2c8.jpg");background-size:cover;background-position:center 48%;}
+body.page-cultura-inmersiva .detail-hero{background-image:linear-gradient(90deg,rgba(6,20,34,.88),rgba(6,20,34,.24)),url("../assets/images/experiences/cultura-inmersiva/cover.jpg"),url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=2200&q=85");background-size:cover;background-position:center 48%;}

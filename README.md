@@ -61,3 +61,7 @@ The descriptions and imagery are preliminary placeholders for review. Replace wi
 ## Corrección de visibilidad — revisión 03.1
 
 Se corrigió la regla de visibilidad de los componentes del modal: la galería de dos imágenes se oculta al abrir “Nuestro Equipo”, y la cuadrícula de perfiles se oculta en todas las demás subsecciones. Los cuatro perfiles aparecen exclusivamente en About Us → Nuestro Equipo.
+
+
+## CP07 — Biblioteca fotográfica
+Se incorporaron espacios organizados para las fotografías propias de NATA. Las imágenes actuales son referencias temporales para el boceto y deben reemplazarse antes de la publicación comercial. Consulta `assets/images/GUIA-FOTOGRAFIAS.md` para nombres y rutas exactas.

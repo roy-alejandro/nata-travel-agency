@@ -1,0 +1,10 @@
+CARPETA PARA FOTOGRAFÍAS PROPIAS DE NATA
+
+Reemplaza las imágenes referenciales colocando tus fotografías en esta carpeta con estos nombres exactos:
+- `cover.jpg`
+- `gallery-1.jpg`
+- `gallery-2.jpg`
+- `gallery-3.jpg`
+- `gallery-4.jpg`
+
+Formato recomendado: JPG o WebP, horizontal 16:9 o 3:2, 1600 px de ancho o más. Mantén el nombre para que la web las reconozca sin cambios de código.

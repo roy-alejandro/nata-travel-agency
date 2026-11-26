@@ -51,3 +51,22 @@ Añade los retratos profesionales en `about/team/` con estos nombres exactos:
 - `victor-enrique-angelo-varillas-reyes.jpg`
 
 Formato recomendado: retrato vertical 4:5, JPG optimizado. Los cargos y descripciones se completarán cuando NATA confirme las responsabilidades de cada integrante.
+
+
+## CP07 — Carpetas para fotografías propias
+Las imágenes que se muestran ahora son **referenciales y temporales**. Puedes sustituirlas colocando tus archivos en las rutas exactas indicadas; no es necesario modificar HTML ni CSS.
+
+### Cultura Inmersiva
+- `experiences/cultura-inmersiva/cover.jpg` — portada de la sección.
+- `experiences/cultura-inmersiva/gastronomia.jpg` — Taller Gastronómico.
+- `experiences/cultura-inmersiva/astronomia.jpg` — Astronomía y Cosmovisión Andina.
+- `experiences/cultura-inmersiva/pan-wawa.jpg` — Taller de Pan Wawa.
+- `experiences/cultura-inmersiva/ceramica.jpg` — Cerámica y Pintado Tradicional.
+- `experiences/cultura-inmersiva/cacao-cafe.jpg` — Plantaciones de Cacao y Café.
+- `experiences/cultura-inmersiva/walking-tasty.jpg` — Walking Tasty Tour.
+
+### Galerías de los tours
+En cada carpeta `experiences/valle-sur/`, `experiences/montana-colores/` y `experiences/valle-sagrado/` utiliza `cover.jpg` para la tarjeta/portada y `gallery-1.jpg`, `gallery-2.jpg`, etc. para futuras galerías.
+
+### Importante
+Las fotografías de referencia externas sirven únicamente para el boceto y pueden cambiar o dejar de estar disponibles. Antes de publicar comercialmente, reemplázalas por fotografías propias o imágenes con licencia comercial verificada.
